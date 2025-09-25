@@ -1,43 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiato ai Libri</title>
-    <link rel="stylesheet" href="./css/index.css">
-</head>
-<body>
-    <nav>
-        <div class="logo">
-            <img src="./assets/imgs/logo-seriate-laghi-2023.png" alt="Seriate Laghi Logo" height="60px">
-            <div class="vertical-line"></div>
-            <h1>Fiato Ai Libri</h1>
-        </div>
-        <ul>
-            <li class="selected"><a href="index.html">Home</a></li>
-            <li><a href="calendar.html">Calendario</a></li>
-            <li><a href="artisti.html">Gli Artisti</a></li>
-            <li><a href="/blablafal">Blablafal</a></li>
-            <li><a href="about.html">Chi Siamo</a></li>
-            <li><a href="edizioni.html">Edizioni</a></li>
-            <li><a href="contact.html">Contattaci</a></li>
-        </ul>
-        <button>Accedi</button>
-    </nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fiato ai Libri</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- Collegamento css bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!-- Collegamento icone bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    </head>
+    <body>
+        
+        <nav class="container-fluid p-3">
+            <div class="row align-items-center">
+                <a href="./index.html" class="nav-logo col-4 d-flex align-items-center justify-content-start">
+                    <img src="./images/logo-seriate-laghi-2023.png" alt="Seriate Laghi Logo" height="60px">
+                    <div class="mx-3 vertical-line"></div>
+                    <h1 class="m-0 fs-4">Fiato Ai Libri</h1>
+                </a>
+                <div class="col-8 d-flex align-items-center justify-content-end">
+                    <div class="d-flex gap-4 align-items-center">
+                        <ul class="nav-link d-flex list-unstyled m-0 p-0 gap-3 text-dark">
+                            <li><a class="selected" href="index.html">Home</a></li>
+                            <li><a href="calendar.html">Calendario</a></li>
+                            <li><a href="artisti.html">Gli Artisti</a></li>
+                            <li><a href="https://fiatoailibri.it/blablafal/">Blablafal</a></li>
+                            <li><a href="about.html">Chi Siamo</a></li>
+                            <li><a href="edizioni.html">Edizioni</a></li>
+                            <li><a href="contact.html">Contattaci</a></li>
+                        </ul>
+                        <a href="./login.html">
+                            <button type="button" class="btn btn-primary">Accedi</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-    <footer>
-        <div class="social-media">
-            <a href="#"><img src="./assets/icons/facebook-icon.png" alt="Facebook" height="30px"></a>
-            <a href="#"><img src="./assets/icons/tiktok-icon.png" alt="TikTok" height="30px"></a>
-            <a href="#"><img src="./assets/icons/instagram-icon.png" alt="Instagram" height="30px"></a>
-        </div>
-        <div class="newsletter">
-            <label for="newsletter">Iscriviti alla Newsletter</label>
-            <input type="email" placeholder="Iscriviti alla Newsletter">
-        </div>
-        <div class="final-text">
-            <p>Sistema Bibliotecario Seriate Laghi | <a href="mailto:sistema.bibliotecario@comune.seriate.bg.it">sistema.bibliotecario@comune.seriate.bg.it</a> - Tel: 035.304306</p>
-        </div>
-    </footer>
-</body>
+        <footer class="container-fluid p-3 position-absolute bottom-0 start-50 translate-middle-x">
+            <div class="row text-center">
+                <div class="footer-icon col-12 p-2">
+                    <a href="https://www.instagram.com/fiatoailibri/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/fiatoailibri"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@fiatoailibri"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="row text-center p-2">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="row">
+                        <div class="col-sm-6 col-12">
+                            <label for="inputPassword6" class="col-form-label">Iscriviti alla Neswletter</label>
+                        </div>
+                        <div class="col-sm-6 col-12">
+                            <input type="email" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center p-2">
+                <div class="col-12 d-flex flex-column flex-sm-row justify-content-center align-items-center">
+                    <p>Sistema Bibliotecario Seriate Laghi | <a href="mailto:sistema.bibliotecario@comune.seriate.bg.it">
+                        sistema.bibliotecario@comune.seriate.bg.it</a> - Tel: 035.304306</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Collegamento js bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
 </html>
