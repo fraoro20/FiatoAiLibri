@@ -74,3 +74,31 @@ nav .logo {
     background-color: black;
     margin: 0 5px;
 }
+
+footer {
+    position: fixed;
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    border-top: solid 1px black;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .newsletter {
+    align-items: center;
+}
+
+footer .newsletter input {
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
