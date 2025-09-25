@@ -61,3 +61,16 @@ nav button {
 nav button:hover {
     background-color: #0056b3;
 }
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 50px;
+    background-color: black;
+    margin: 0 5px;
+}
