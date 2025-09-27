@@ -1,11 +1,12 @@
-/* Auth Container Styles */
+/* Auth Container */
 .auth-container {
     background: white;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     max-width: 450px;
-    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .auth-toggle {
