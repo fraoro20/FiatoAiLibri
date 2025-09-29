@@ -14,6 +14,7 @@ nav {
     text-transform: uppercase;
     font-weight: bold;
     color: black;
+    font-size: 1.4rem;
 }
 
 .vertical-line {
@@ -27,7 +28,7 @@ nav {
     font-weight: bold;
     display: flex;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .nav-link a {
@@ -35,6 +36,8 @@ nav {
     color: black;
     border-bottom: 3px solid transparent;
     padding-bottom: 3px;
+    padding-top: 3px;
+    border-top: 3px solid transparent;
 }
 
 .nav-link a:hover,
@@ -63,4 +66,28 @@ footer {
 .text-footer a {
     text-decoration: none;
     color: black;
+}
+
+@media (max-width: 400px) {
+    .nav-logo img {
+        height: 2rem;
+    }
+
+    .vertical-line {
+        width: 1px;
+        height: 35px;
+    }
+
+    .nav-title {
+        font-size: 1rem;
+    }
+
+    .footer-icon i {
+        padding: 8px;
+        font-size: 15px;
+    }
+
+    .text-footer {
+        font-size: 0.6rem;
+    }
 }
