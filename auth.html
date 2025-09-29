@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,19 +18,59 @@
         <!-- Navbar -->
         <nav class="container-fluid p-3">
             <div class="row align-items-center">
-                <div class="col-12 d-flex align-items-center justify-content-center">
+                <div class="col-xl-4 col-10 d-flex align-items-center justify-content-start">
                     <a href="./index.html" class="nav-logo d-flex align-items-center justify-content-start">
                         <img src="./images/logo-seriate-laghi-2023.png" alt="Seriate Laghi Logo" height="60px">
-                        <h1 class="mx-2 my-0 fs-4 nav-title">Fiato Ai Libri</h1>
+                        <div class="mx-2 vertical-line"></div>
+                        <h1 class="m-0 fs-3 nav-title">Fiato Ai Libri</h1>
+                    </a>
+                </div>
+                <div class="col-8 d-none d-xl-flex align-items-center justify-content-end">
+                    <div class="d-flex gap-4 align-items-center">
+                        <ul class="nav-link d-flex list-unstyled m-0 p-0 gap-3 text-dark">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="calendar.html">Calendario</a></li>
+                            <li><a href="artisti.html">Gli Artisti</a></li>
+                            <li><a href="https://fiatoailibri.it/blablafal/" target="_blank">Blablafal</a></li>
+                            <li><a href="about.html">Chi Siamo</a></li>
+                            <li><a href="edizioni.html">Edizioni</a></li>
+                            <li><a href="contact.html">Contattaci</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2 d-xl-none d-flex align-items-center justify-content-end">
+                    <a class="btn" data-bs-toggle="offcanvas" href="#sidebar" role="button" aria-controls="sidebar">
+                        <i class="bi bi-list fs-1"></i>
                     </a>
                 </div>
             </div>
         </nav>
+
+        <!-- Menu laterale -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+            <div class="offcanvas-header pt-4">
+                <h5 class="offcanvas-title nav-title" id="sidebarLabel">Fiato Ai Libri</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body position-relative">
+                <div class="position-absolute top-0 start-0">
+                    <ul class="nav-link d-flex flex-column list-unstyled m-0 p-3 gap-3 text-dark">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="calendar.html">Calendario</a></li>
+                        <li><a href="artisti.html">Gli Artisti</a></li>
+                        <li><a href="https://fiatoailibri.it/blablafal/" target="_blank">Blablafal</a></li>
+                        <li><a href="about.html">Chi Siamo</a></li>
+                        <li><a href="edizioni.html">Edizioni</a></li>
+                        <li><a href="contact.html">Contattaci</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         
         <!-- Contenuto centrale -->
-        <main class="flex-fill d-flex align-items-center justify-content-center">
+        <main class="bg flex-fill d-flex align-items-center justify-content-center">
             <div class="row w-100 d-flex justify-content-center align-items-center">
-                <div class="auth-container p-0 m-3 col-11 col-sm-8 col-md-7 col-lg-6 col-xl-5"> 
+                <div class="auth-container p-0 m-3 col-11 col-sm-8 col-md-7 col-lg-6 col-xl-4"> 
                     <div class="d-flex">
                         <div class="col-6 d-flex justify-content-center activeBtn border-custom-top-left p-1" id="loginBtn">
                             <button class="btn-custon text-primary fw-bold p-2">Accedi</button>
@@ -39,7 +79,7 @@
                             <button class="btn-custon text-primary fw-bold p-2">Registrati</button>
                         </div>
                     </div>
-                    <div class="px-3 my-3">
+                    <div class="px-3 py-3 bg-white border-custom">
                         <!-- Accesso -->
                         <form class="mb-3" id="loginForm">
                             <h1 class="d-flex justify-content-center mb-3 text-primary fw-bold fs-2">Accedi</h1>
@@ -83,30 +123,6 @@
                 </div>
             </div>
         </main>
-           
-        <!-- <form>
-            <div class="input-group">
-                <i class="bi bi-person"></i>
-                <input type="text" placeholder="Nome" required>
-            </div>
-            <div class="input-group">
-                <i class="bi bi-person-fill"></i>
-                <input type="text" placeholder="Cognome" required>
-            </div>
-            <div class="input-group">
-                <i class="bi bi-envelope"></i>
-                <input type="email" placeholder="Email" required>
-            </div>
-            <div class="input-group">
-                <i class="bi bi-lock"></i>
-                <input type="password" placeholder="Password" required>
-            </div>
-            <div class="input-group">
-                <i class="bi bi-lock-fill"></i>
-                <input type="password" placeholder="Conferma Password" required>
-            </div>
-            <button type="submit" class="submit-btn">Registrati</button>
-        </form> -->
         
         <!-- Footer -->
         <footer class="container-fluid p-3">
@@ -119,8 +135,10 @@
             </div>
             <div class="row text-center p-2">
                 <div class="col-12 d-flex flex-column flex-sm-row justify-content-center align-items-center">
-                    <p>Sistema Bibliotecario Seriate Laghi<br><a href="mailto:sistema.bibliotecario@comune.seriate.bg.it">
-                        sistema.bibliotecario@comune.seriate.bg.it</a></p>
+                    <p class="text-footer">Sistema Bibliotecario Seriate Laghi<br>
+                        <a href="mailto:sistema.bibliotecario@comune.seriate.bg.it">
+                            sistema.bibliotecario@comune.seriate.bg.it</a>
+                    </p>
                 </div>
             </div>
         </footer>
