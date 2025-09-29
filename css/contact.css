@@ -3,8 +3,8 @@ iframe {
 }
 
 .info {
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
-    border-radius: 20px;
+    gap: 10px;
+    font-size: 1.1rem;
 }
 
 .text-wrap {
