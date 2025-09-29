@@ -25,6 +25,9 @@ nav {
 .nav-link li {
     font-family: Arial, sans-serif;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
 }
 
 .nav-link a {
