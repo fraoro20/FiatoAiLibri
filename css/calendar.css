@@ -20,3 +20,50 @@
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
     animation: border-pulse 5s ease-in-out infinite;
 }
+
+.date {
+    border: 2px solid #17a2b8;
+    color: #17a2b8 !important; /* !important per sovrascrivere Bootstrap */
+}
+
+.hour {
+    border: 2px solid #6f42c1;
+    color: #6f42c1 !important; /* !important per sovrascrivere Bootstrap */ 
+}
+
+.location {
+    border: 2px solid #28a745;
+    color: #28a745 !important; /* !important per sovrascrivere Bootstrap */
+}
+
+.status {
+    border: #ff6b1a 2px solid;
+    color: #ff6b1a !important; /* !important per sovrascrivere Bootstrap */
+}
+
+.prize {
+    border: 2px solid #ffc107;
+    color: #ffc107 !important; /* !important per sovrascrivere Bootstrap */
+}
+
+.concluso {
+    position: relative;
+    overflow: hidden;
+}
+
+.tag-concluso {
+    position: absolute;
+    top: 10px;
+    left: -55px;
+    transform: rotate(-30deg);
+    background-color: rgba(52, 152, 219, 0.85);
+    color: white;
+    padding: 8px 60px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    z-index: 10;
+    pointer-events: none;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
