@@ -8,6 +8,7 @@
         <meta name="description" content="Fiato ai Libri ritorna e prende il largo tra libri, musica e teatro.">
         <link rel="stylesheet" href="./css/mainLayout.css">
         <link rel="stylesheet" href="./css/contact.css">
+        <link rel="stylesheet" href="./css/auth.css">
         <!-- Collegamento css bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
             integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -37,12 +38,11 @@
                             <li><a href="edizioni.html">Edizioni</a></li>
                             <li><a class="selected" href="contact.html">Contattaci</a></li>
                         </ul>
-                        <a href="./auth.html">
-                            <button type="button" class="btn" style="background-color: #ee914d; color: black; border: none;">
-                                <i class="bi bi-person-circle"></i>
-                                Accedi
-                            </button>
-                        </a>
+                        <button type="button" class="btn" style="background-color: #ee914d; color: black; border: none;"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-person-circle"></i>
+                            Accedi
+                        </button>
                     </div>
                 </div>
                 <div class="col-2 d-xl-none d-flex align-items-center justify-content-end">
@@ -68,18 +68,81 @@
                         <li><a href="https://fiatoailibri.it/blablafal/" target="_blank">Blablafal</a></li>
                         <li><a href="about.html">Chi Siamo</a></li>
                         <li><a href="edizioni.html">Edizioni</a></li>
-                        <li><a class="selected" href="contact.html">Contattaci</a></li>
+                        <li><a class="selected"  href="contact.html">Contattaci</a></li>
                     </ul>
                 </div>
             </div>
             <div class="offcanvas-footer">
                 <div class="p-3">
-                    <a href="./auth.html">
-                        <button type="button" class="btn" style="background-color: #ee914d; color: black; border: none;">
-                            <i class="bi bi-person-circle"></i>
-                            Accedi
-                        </button>
-                    </a>
+                    <button type="button" class="btn" style="background-color: #ee914d; color: black; border: none;"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="bi bi-person-circle"></i>
+                        Accedi
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal accesso -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Bentornato!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="d-flex">
+                            <div class="col-6 d-flex justify-content-center activeBtn p-1" id="loginBtn">
+                                <button class="btn-custon text-primary fw-bold p-2">Accedi</button>
+                            </div>
+                            <div class="col-6 d-flex justify-content-center p-1" id="registerBtn">
+                                <button class="btn-custon text-primary fw-bold p-2">Registrati</button>
+                            </div>
+                        </div>
+                        <div class="p-3 bg-white">
+                            <!-- Accesso -->
+                            <form id="loginForm">
+                                <h1 class="d-flex justify-content-center mb-3 text-primary fw-bold fs-2">Accedi</h1>
+                                <div class="form-floating mb-3"> 
+                                    <input type="email" class="form-control" id="floatingEmailLogin" 
+                                        placeholder="Email" autocomplete="email" required>
+                                    <label for="floatingEmailLogin">
+                                        <i class="bi bi-envelope me-2"></i>Email
+                                    </label>
+                                </div> 
+                                <div class="form-floating mb-3"> 
+                                    <input type="password" class="form-control" id="floatingPasswordLogin" 
+                                        placeholder="Password" autocomplete="current-password" required>
+                                    <label for="floatingPasswordLogin">
+                                        <i class="bi bi-lock me-2"></i>Password
+                                    </label>
+                                </div>
+                            </form>
+
+                            <!-- Registrazione -->
+                            <form class="noActiveForm" id="registerForm">
+                                <h1 class="d-flex justify-content-center mb-3 text-primary fw-bold fs-2">Registrati</h1>
+                                <div class="form-floating mb-3"> 
+                                    <input type="email" class="form-control" id="floatingEmailRegister" 
+                                        placeholder="Email" autocomplete="email" required>
+                                    <label for="floatingEmailRegister">
+                                        <i class="bi bi-envelope me-2"></i>Email
+                                    </label>
+                                </div> 
+                                <div class="form-floating mb-3"> 
+                                    <input type="password" class="form-control" id="floatingPasswordRegister" 
+                                        placeholder="Password" autocomplete="current-password" required>
+                                    <label for="floatingPasswordRegister">
+                                        <i class="bi bi-lock me-2"></i>Password
+                                    </label>
+                                </div>
+                            </form>
+                        </div> 
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary w-100 rounded-3" data-bs-dismiss="modal" type="submit">Accedi</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -124,9 +187,9 @@
         </main>
         
         <!-- Footer -->
-        <footer class="container-fluid p-3">
+        <footer class="container-fluid">
             <div class="row text-center">
-                <div class="footer-icon col-12 p-2">
+                <div class="footer-icon col-12 mt-2 p-2">
                     <a href="https://www.instagram.com/fiatoailibri/"><i class="bi bi-instagram"></i></a>
                     <a href="https://www.facebook.com/fiatoailibri"><i class="bi bi-facebook"></i></a>
                     <a href="https://www.tiktok.com/@fiatoailibri"><i class="bi bi-tiktok"></i></a>
