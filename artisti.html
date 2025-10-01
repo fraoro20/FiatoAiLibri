@@ -38,7 +38,7 @@
                             <li><a href="contact.html">Contattaci</a></li>
                         </ul>
                         <button type="button" class="btn" style="background-color: #ee914d; color: black; border: none;"
-                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            data-bs-toggle="modal" data-bs-target="#authModal">
                             <i class="bi bi-person-circle"></i>
                             Accedi
                         </button>
@@ -74,7 +74,7 @@
             <div class="offcanvas-footer">
                 <div class="p-3">
                     <button type="button" class="btn" style="background-color: #ee914d; color: black; border: none;"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        data-bs-toggle="modal" data-bs-target="#authModal">
                         <i class="bi bi-person-circle"></i>
                         Accedi
                     </button>
@@ -83,27 +83,27 @@
         </div>
 
         <!-- Modal accesso -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Bentornato!</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
+                <div class="modal-content p-1 rounded-5">
                     <div class="modal-body p-0">
-                        <div class="d-flex">
-                            <div class="col-6 d-flex justify-content-center activeBtn p-1" id="loginBtn">
-                                <button class="btn-custon text-primary fw-bold p-2">Accedi</button>
+                        <div class="container">
+                            <div class="row d-flex justify-content-end pt-3 px-3">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="col-6 d-flex justify-content-center p-1" id="registerBtn">
-                                <button class="btn-custon text-primary fw-bold p-2">Registrati</button>
+                            <div class="row px-3">
+                                <div class="col-6 d-flex justify-content-center activeBtn m-0 p-0" id="loginBtn">
+                                    <button class="btn-custon text-primary fw-bold p-2">Accedi</button>
+                                </div>
+                                <div class="col-6 d-flex justify-content-center m-0 p-0" id="registerBtn">
+                                    <button class="btn-custon text-primary fw-bold p-2">Registrati</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="p-3 bg-white">
+                        <div class="p-3 bg-trasparent">
                             <!-- Accesso -->
                             <form id="loginForm">
-                                <h1 class="d-flex justify-content-center mb-3 text-primary fw-bold fs-2">Accedi</h1>
-                                <div class="form-floating mb-3"> 
+                                <div class="form-floating mb-3 mt-3"> 
                                     <input type="email" class="form-control" id="floatingEmailLogin" 
                                         placeholder="Email" autocomplete="email" required>
                                     <label for="floatingEmailLogin">
@@ -117,12 +117,12 @@
                                         <i class="bi bi-lock me-2"></i>Password
                                     </label>
                                 </div>
+                                <button class="btn btn-primary w-100 rounded-3 mt-3" data-bs-dismiss="modal" type="submit">Accedi</button>
                             </form>
 
                             <!-- Registrazione -->
                             <form class="noActiveForm" id="registerForm">
-                                <h1 class="d-flex justify-content-center mb-3 text-primary fw-bold fs-2">Registrati</h1>
-                                <div class="form-floating mb-3"> 
+                                <div class="form-floating mb-3 mt-3"> 
                                     <input type="email" class="form-control" id="floatingEmailRegister" 
                                         placeholder="Email" autocomplete="email" required>
                                     <label for="floatingEmailRegister">
@@ -136,11 +136,9 @@
                                         <i class="bi bi-lock me-2"></i>Password
                                     </label>
                                 </div>
+                                <button class="btn btn-primary w-100 rounded-3 mt-3" data-bs-dismiss="modal" type="submit">Registrati</button>
                             </form>
                         </div> 
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-primary w-100 rounded-3" data-bs-dismiss="modal" type="submit">Accedi</button>
                     </div>
                 </div>
             </div>
@@ -254,5 +252,7 @@
         <!-- Collegamento js bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!-- Script per lo slider login/register -->
+        <script src="./js/auth.js"></script>
     </body>
 </html>
