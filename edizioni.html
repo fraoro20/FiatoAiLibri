@@ -122,7 +122,29 @@
 
                             <!-- Registrazione -->
                             <form class="noActiveForm" id="registerForm">
-                                <div class="form-floating mb-3 mt-3"> 
+                                <div class="container text-center">
+                                    <div class="row">
+                                        <div class="col m-0 p-0">
+                                            <div class="form-floating mb-3 me-2">
+                                                <input type="text" class="form-control" id="floatingNameRegister" 
+                                                    placeholder="Nome" autocomplete="given-name" required>
+                                                <label for="floatingNameRegister">
+                                                    <i class="bi bi-person"></i> Nome
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col m-0 p-0">
+                                            <div class="form-floating mb-3 ms-2">
+                                                <input type="text" class="form-control" id="floatingSurnameRegister" 
+                                                    placeholder="Cognome" autocomplete="family-name" required>
+                                                <label for="floatingSurnameRegister">
+                                                    <i class="bi bi-person"></i> Cognome
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
                                     <input type="email" class="form-control" id="floatingEmailRegister" 
                                         placeholder="Email" autocomplete="email" required>
                                     <label for="floatingEmailRegister">
