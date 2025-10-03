@@ -1,6 +1,6 @@
 # Fiato ai Libri - Website Restyle
 
-This website restyle was carried out as the **first school project** of V year of high school, with the aim of practicing teamwork and web development skills.
+This website restyle was carried out as the **first school project** of senior year of high school, with the aim of practicing teamwork and web development skills.
 
 - **Start date:** 22 September 2025
 - **Completion date:** [dd MMMM yyyy]
