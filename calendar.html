@@ -123,25 +123,23 @@
 
                             <!-- Registrazione -->
                             <form class="noActiveForm" id="registerForm">
-                                <div class="container text-center">
-                                    <div class="row">
-                                        <div class="col m-0 p-0">
-                                            <div class="form-floating mb-3 me-2">
-                                                <input type="text" class="form-control" id="floatingNameRegister" 
-                                                    placeholder="Nome" autocomplete="given-name" required>
-                                                <label for="floatingNameRegister">
-                                                    <i class="bi bi-person"></i> Nome
-                                                </label>
-                                            </div>
+                                <div class="row">
+                                    <div class="col-6 pe-1">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingNameRegister" 
+                                                placeholder="Nome" autocomplete="given-name" required>
+                                            <label for="floatingNameRegister">
+                                                <i class="bi bi-person"></i> Nome
+                                            </label>
                                         </div>
-                                        <div class="col m-0 p-0">
-                                            <div class="form-floating mb-3 ms-2">
-                                                <input type="text" class="form-control" id="floatingSurnameRegister" 
-                                                    placeholder="Cognome" autocomplete="family-name" required>
-                                                <label for="floatingSurnameRegister">
-                                                    <i class="bi bi-person"></i> Cognome
-                                                </label>
-                                            </div>
+                                    </div>
+                                    <div class="col-6 ps-1">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="floatingSurnameRegister" 
+                                                placeholder="Cognome" autocomplete="family-name" required>
+                                            <label for="floatingSurnameRegister">
+                                                <i class="bi bi-person"></i> Cognome
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
@@ -168,70 +166,32 @@
         </div>
         
         <!-- Contenuto centrale -->
-        <main class="flex-fill align-items-center d-flex flex-column">
-            <div class="row w-100 justify-content-center">
-                <div class="col-12 col-xl-8 flex-column mt-3">
-                    <h2 class="mb-4 text-center">Prossimi Eventi</h2>
-                    <!-- Card Eventi-->
-                    <div class="card prox-event mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4 d-flex align-items-center justify-content-center">
-                                <img src="./images/eventi/FAL2025_La-vegetariana.jpg" class="img-fluid rounded" alt="Evento 1" width="100%">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Titolo Evento 1</h5>
-                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab ipsum numquam sint? Quia odio quibusdam eligendi nulla accusantium deleniti, modi possimus! Voluptatum, voluptate animi? Pariatur dolor quibusdam aspernatur possimus vitae!</p>
-                                    <p class="card-pills d-flex gap-1 flex-wrap">
-                                        <span class="badge date"><i class="bi bi-calendar3"></i> 15 Ottobre 2025</span>
-                                        <span class="badge hour"><i class="bi bi-clock"></i> 18:00 - 20:00</span>
-                                        <span class="badge location"><i class="bi bi-geo-alt"></i><a href="https://maps.app.goo.gl/L9P5bg8DGWtSkcVH9" class="link-success link-offset-2 link-underline-opacity-0 link-underline-opacity-0-hover" target="_blank">Biblioteca Comunale</a></span>
-                                        <span class="badge prize"><i class="bi bi-tag"></i> Ingresso Gratuito</span>
-                                        <span class="badge status"><i class="bi bi-check-circle"></i> Senza prenotazione</span>
-                                    </p>
+        <main class="flex-fill d-flex flex-column align-items-center">
+            <div class="container py-5">
+                <h2 class="mb-5 fs-2 text-center fw-bold">Prossimi Eventi</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card rounded-4" style="overflow: hidden;">
+                            <img src="./images/eventi/FAL2025_La-vegetariana.jpg" class="card-img-top" alt="La Vegetariana"
+                                style="height: 220px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">La Vegetariana</h5>
+                                <p class="card-text">
+                                    Lettura e discussione del romanzo "La Vegetariana". Un’occasione di confronto e riflessione 
+                                    sul rapporto tra natura e identità personale.
+                                </p>
+                                <div class="card-info d-flex flex-wrap gap-2 mb-3">
+                                    <span><i class="bi bi-calendar3"></i> 15 Ottobre 2025</span>
+                                    <span><i class="bi bi-clock"></i> 18:00 - 20:00</span>
+                                    <span>
+                                        <i class="bi bi-geo-alt"></i>
+                                        <a href="https://maps.app.goo.gl/L9P5bg8DGWtSkcVH9" target="_blank">Biblioteca Comunale</a>
+                                    </span>
+                                    <span><i class="bi bi-tag"></i> Ingresso Gratuito</span>
+                                    <span><i class="bi bi-check-circle"></i> Senza prenotazione</span>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-4 d-flex align-items-center justify-content-center">
-                                <img src="./images/eventi/FAL2025_Orgoglio-e-pregiudizio.jpg" class="img-fluid rounded" alt="Evento 2">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Titolo Evento 2</h5>
-                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab ipsum numquam sint? Quia odio quibusdam eligendi nulla accusantium deleniti, modi possimus! Voluptatum, voluptate animi? Pariatur dolor quibusdam aspernatur possimus vitae!</p>
-                                    <p class="card-pills d-flex gap-1 flex-wrap">
-                                        <span class="badge date"><i class="bi bi-calendar3"></i> 22 Ottobre 2025</span>
-                                        <span class="badge hour"><i class="bi bi-clock"></i> 18:00 - 20:00</span>
-                                        <span class="badge location"><i class="bi bi-geo-alt"></i><a href="https://maps.app.goo.gl/1KwNdtTt9X1QL6vTA" class="link-success link-offset-2 link-underline-opacity-0 link-underline-opacity-0-hover" target="_blank"> Piazzale G. Matteotti</a></span>
-                                        <span class="badge prize"><i class="bi bi-tag"></i> Ingresso Gratuito</span>
-                                        <span class="badge status"><i class="bi bi-check-circle"></i> Con Prenotazione</span>
-                                    </p>
-                                    <!-- p class="d-flex justify-content-end"><button type="button" class="btn btn-danger btn-lg">Prenota</button></p -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h2 class="mb-4 text-center">Eventi Passati</h2>
-                    <div class="card mb-3 concluso">
-                        <div class="tag-concluso">Concluso</div>
-                        <div class="row g-0">
-                            <div class="col-md-4 d-flex align-items-center justify-content-center">
-                                <img src="" class="img-fluid rounded" alt="Evento 3">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Titolo Evento 3</h5>
-                                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab ipsum numquam sint? Quia odio quibusdam eligendi nulla accusantium deleniti, modi possimus! Voluptatum, voluptate animi? Pariatur dolor quibusdam aspernatur possimus vitae!</p>
-                                    <p class="card-pills d-flex gap-1 flex-wrap">
-                                        <span class="badge date"><i class="bi bi-calendar3"></i> 21 Settembre 2025</span>
-                                        <span class="badge hour"><i class="bi bi-clock"></i> 18:00 - 20:00</span>
-                                        <span class="badge location"><i class="bi bi-geo-alt"></i><a href="https://maps.app.goo.gl/L9P5bg8DGWtSkcVH9" class="link-success link-offset-2 link-underline-opacity-0 link-underline-opacity-0-hover" target="_blank">Biblioteca Comunale</a></span>
-                                        <span class="badge prize"><i class="bi bi-tag"></i> Ingresso Gratuito</span>
-                                        <span class="badge status"><i class="bi bi-check-circle"></i> Senza prenotazione</span>
-                                    </p>
+                                <div class="d-flex justify-content-end">
+                                    <a href="#" class="btn btn-warning px-4 py-2 rounded-5">Prenota</a>
                                 </div>
                             </div>
                         </div>
