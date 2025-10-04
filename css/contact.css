@@ -10,22 +10,3 @@ iframe {
 .text-wrap {
     overflow-wrap: anywhere;
 }
-
-/* .libers {
-    background-image: url("../images/libri.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.overlay {
-    background: rgba(0,0,0,0.5);
-    padding: 2rem;
-    border-radius: 1rem;
-    color: white;
-    text-align: center;
-} */
