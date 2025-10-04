@@ -7,7 +7,6 @@
         <title>Contatti | Fiato ai Libri</title>
         <meta name="description" content="Fiato ai Libri ritorna e prende il largo tra libri, musica e teatro.">
         <link rel="stylesheet" href="./css/mainLayout.css">
-        <link rel="stylesheet" href="./css/contact.css">
         <link rel="stylesheet" href="./css/auth.css">
         <!-- Collegamento css bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -166,39 +165,62 @@
         </div>
 
         <!-- Contenuto centrale -->
-        <main class="flex-fill my-5 d-flex justify-content-center align-items-center m-0 p-0">
-            <div class="row p-2 m-0 w-100">
-                <div class="col-12 col-xl-6 d-flex flex-column align-items-center">
-                    <h3 class="fs-5">Informazioni</h3>
-                    <div class="flex-fill d-flex flex-column justify-content-center mt-3 px-4">
-                        <div class="info d-flex flex-row">
-                            <i class="bi bi-geo-alt-fill pe-2"></i>
-                            <p class="text-wrap">Via Italia, 58, 24068 Seriate BG, Italia</p>
-                        </div>
-                        <div class="info d-flex flex-row">
-                            <i class="bi bi-telephone pe-2"></i>
-                            <p class="text-wrap">+39 035 304306</p>
-                        </div>
-                        <div class="info d-flex flex-row">
-                            <i class="bi bi-envelope pe-2"></i>
-                            <p class="text-wrap">sistema.bibliotecario@comune.seriate.bg.it</p>
-                        </div>
-                        <div class="info d-flex flex-row">
-                            <i class="bi bi-clock-fill pe-2"></i>
-                            <p class="text-wrap"> 
-                                Orari di apertura <br>
-                                Lun-Ven: 09:00 - 18:00 <br>
-                                Sabato: 09:00 - 13:00 <br>
-                                Domenica: Chiuso
-                            </p>
+        <main class="flex-fill d-flex flex-column align-items-center">
+            <div class="container-lg py-5">
+                <h2 class="mb-5 fs-2 text-center fw-bold">Contattaci</h2>
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center mb-4 text-center">
+                        <p class="text-break d-flex align-items-center">
+                            <i class="bi bi-geo-alt-fill fs-3 text-primary me-2"></i>
+                            Via Italia, 58, 24068 Seriate BG, Italia
+                        </p>
+                        <p class="text-break d-flex align-items-center">
+                            <i class="bi bi-telephone fs-3 text-success me-2"></i>
+                            +39 035 304306
+                        </p>
+                        <p class="text-break d-flex align-items-center">
+                            <i class="bi bi-envelope fs-3 text-danger me-2"></i>
+                            sistema.bibliotecario@comune.seriate.bg.it
+                        </p>
+                        <div>
+                            <i class="bi bi-clock-fill fs-3 text-warning"></i>
+                            <p class="mb-0">Lun-Ven: 09:00 - 18:00</p>
+                            <p class="mb-0">Sabato: 09:00 - 13:00</p>
+                            <p class="mb-0">Domenica: Chiuso</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-xl-6 d-flex flex-column justify-content-center">
-                    <h3 class="fs-5 d-flex justify-content-center">Dove potete trovarci</h3>
-                    <div class="d-flex justify-content-center mt-3">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.278993778861!2d9.715073876744334!3d45.68537281865373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478150867ae990c9%3A0xa0dda1396b24bb7!2sBiblioteca%20Comunale%20Giacinto%20Gambirasio!5e0!3m2!1sit!2sit!4v1759062569325!5m2!1sit!2sit" 
-                           class="rounded-4" width="600" height="400"></iframe>
+                    <div class="col-12 col-md-6 mb-4">
+                        <div class="d-flex justify-content-center">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5438.957702272593!2d9.715728830344563!3d45.68645948761234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47815086783e8ee3%3A0x92c1b5c49292b227!2sVia%20Italia%2C%2058%2C%2024068%20Seriate%20BG!5e0!3m2!1sit!2sit!4v1759593048712!5m2!1sit!2sit" 
+                                width="100%" height="350" class="rounded-4" style="box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p class="text-center my-5" style="overflow-wrap: anywhere;">
+                            Hai domande o suggerimenti? Compila il modulo qui sotto e ti risponderemo il prima possibile.
+                        </p>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Il tuo nome">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" autocomplete="email" placeholder="esempio@esempio.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="oggetto" class="form-label">Oggetto</label>
+                                <input type="text" class="form-control" id="oggetto" placeholder="Oggetto del messaggio">
+                            </div>
+                            <div class="mb-3">
+                                <label for="messaggio" class="form-label">Messaggio</label>
+                                <textarea class="form-control" id="messaggio" rows="3" placeholder="Scrivi qui il tuo messaggio"></textarea>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn btn-warning rounded-5 py-1 px-4">Invia</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
