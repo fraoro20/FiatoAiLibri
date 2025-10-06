@@ -83,9 +83,9 @@
         </div>
 
         <!-- Modal accesso -->
-        <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal fade blur-modal" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content p-1 rounded-5">
+                <div id="sfondoModal" class="modal-content p-1 rounded-5">
                     <div class="modal-body p-0">
                         <div class="container">
                             <div class="row d-flex justify-content-end pt-3 px-3">
@@ -93,10 +93,10 @@
                             </div>
                             <div class="row px-3">
                                 <div class="col-6 d-flex justify-content-center activeBtn m-0 p-0" id="loginBtn">
-                                    <button class="btn-custon text-primary fw-bold p-2">Accedi</button>
+                                    <button class="btn-custon text-dark fw-bold p-2">Accedi</button>
                                 </div>
                                 <div class="col-6 d-flex justify-content-center m-0 p-0" id="registerBtn">
-                                    <button class="btn-custon text-primary fw-bold p-2">Registrati</button>
+                                    <button class="btn-custon text-dark fw-bold p-2">Registrati</button>
                                 </div>
                             </div>
                         </div>
@@ -117,7 +117,7 @@
                                         <i class="bi bi-lock me-2"></i>Password
                                     </label>
                                 </div>
-                                <button class="btn btn-primary w-100 rounded-3 mt-3" data-bs-dismiss="modal" type="submit">Accedi</button>
+                                <button class="btn btn-warning w-100 rounded-3 mt-3" data-bs-dismiss="modal" type="submit">Accedi</button>
                             </form>
 
                             <!-- Registrazione -->
@@ -156,7 +156,7 @@
                                         <i class="bi bi-lock me-2"></i>Password
                                     </label>
                                 </div>
-                                <button class="btn btn-primary w-100 rounded-3 mt-3" data-bs-dismiss="modal" type="submit">Registrati</button>
+                                <button class="btn btn-warning w-100 rounded-3 mt-3" data-bs-dismiss="modal" type="submit">Registrati</button>
                             </form>
                         </div> 
                     </div>

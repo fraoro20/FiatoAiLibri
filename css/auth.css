@@ -4,9 +4,14 @@
 }
 
 .activeBtn {
-    border-bottom: 2px solid #0d6efd;
+  border-bottom: 2px solid #ffc107;
 }
 
 .noActiveForm {
-    display: none;
+  display: none;
 }
+
+#sfondoModal {
+  background-color: rgba(249, 246, 238, 0.7);
+  backdrop-filter: blur(6px);
+} 
