@@ -10,7 +10,6 @@ document.getElementById('registerBtn').addEventListener('click', function () {
 
 // Funzione per mostrare il form corretto
 function showForm(formType) {
-    // Aggiungi classe active al bottone e form corretti
     if (formType === 'login') {
         document.getElementById('loginBtn').classList.add('activeBtn');
         document.getElementById('registerBtn').classList.remove("activeBtn");
