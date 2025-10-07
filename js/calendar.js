@@ -4,7 +4,7 @@ const alertPrenotamento = document.getElementById("alertAccesso");
 
 for (let i = 0; i < prenotaBtn.length; i++) {
     prenotaBtn[i].addEventListener("click", function() {
-        controlloAccesso("false");  //Temporaneamento per test
+        controlloAccesso("true");  //Temporaneamento per test
     });
 }
 
