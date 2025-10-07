@@ -324,22 +324,76 @@
 
         <!-- Modal prenotamento -->
         <div class="modal fade" id="modalPrenotamento" tabindex="-1" aria-labelledby="modalPrenotamentoLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content p-1 rounded-5">
-                    <div class="modal-body p-0">
-                        <div class="container">
-                            <div class="row d-flex justify-content-end pt-3 px-3">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-header p-3">
+                        <h5 class="modal-title fw-bold">Evento...</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-3">
+                        <div class="row m-0">
+                            <div class="d-flex m-0 p-0 gap-1">
+                                <p class="m-0">Posti disponibili:</p>
+                                <p class="m-0 text-success">100</p>
                             </div>
-                            <div class="row px-3">
-                                <div class="col d-flex justify-content-center m-0 p-0" id="loginBtn">
-                                    <button class="btn-custon text-dark fw-bold p-2">Benvenuto, Moretti Luca!</button>
+                        </div>
+                        <div class="row m-0 mt-2">
+                            <div class="col-12 col-md-6 p-0">
+                                <ul class="listaPrenotazione list-group p-0">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        (nome e cognome)
+                                        <span class="badge text-bg-danger rounded-pill"><i class="bi bi-trash"></i></span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        altri utenti
+                                        <span class="badge text-bg-danger rounded-pill"><i class="bi bi-trash"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-6 p-0">
+                                <ul class="listaPrenotazione list-group p-0">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        altri utenti
+                                        <span class="badge text-bg-danger rounded-pill"><i class="bi bi-trash"></i></span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                        altri utenti
+                                        <span class="badge text-bg-danger rounded-pill"><i class="bi bi-trash"></i></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row m-0 mt-2">
+                            <div class="col-6 p-0 pe-1">
+                                <div class="form-floating"> 
+                                    <input type="text" class="form-control" id="nomePrenotazione" 
+                                        placeholder="text" autocomplete="text" required>
+                                    <label for="nomePrenotazione">
+                                        Nome
+                                    </label>
+                                </div> 
+                            </div>
+                            <div class="col-6 p-0 ps-1">
+                                <div class="form-floating"> 
+                                    <input type="text" class="form-control" id="cognomePrenotazione" 
+                                        placeholder="text" autocomplete="current-text" required>
+                                    <label for="cognomePrenotazione">
+                                        Cognome
+                                    </label>
                                 </div>
                             </div>
                         </div>
-                        <div class="p-3 bg-trasparent">
-                            
-                        </div> 
+                        <div class="row m-0 mt-2">
+                            <button type="button" class="btn btn-primary px-4 py-2 rounded-3 w-100">
+                                Aggiungi Utente
+                            </button>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning px-4 py-2 rounded-3 w-100">
+                            Conferma Prenotazione
+                        </button>
                     </div>
                 </div>
             </div>

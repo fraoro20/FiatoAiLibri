@@ -14,3 +14,12 @@
 .card-info a:hover {
   text-decoration: underline;
 }
+
+.listaPrenotazione li {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.listaPrenotazione li:last-child {
+  border: none;
+}
