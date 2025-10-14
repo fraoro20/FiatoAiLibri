@@ -95,3 +95,7 @@ footer {
         font-size: 0.6rem;
     }
 }
+
+#sidebar {
+    background-color: #ffff00;
+}
