@@ -55,14 +55,6 @@
             </div>
         </nav>
 
-        <!-- Barra Notizie -->
-        <div class="container-fluid p-2 d-flex bg-black justify-content-center">
-            <!-- Testo completo per desktop -->
-            <p class="spectral m-0 fs-5 bold text-uppercase fw-bold news-text-full" style="color: #ffff00;">20<sup>A</sup> Edizione - Festival di Teatro e Lettura - dal 10 Settembre al 3 Ottobre 2025</p>
-            <!-- Testo abbreviato per mobile -->
-            <p class="spectral m-0 fs-5 bold text-uppercase fw-bold news-text-mobile" style="color: #ffff00;">20<sup>A</sup> Edizione</p>
-        </div>
-
         <!-- Menu laterale -->
         <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
             <div class="offcanvas-header pt-4">
@@ -176,8 +168,22 @@
         </div>
         
         <!-- Contenuto centrale -->
-        <main class="flex-fill d-flex justify-content-center align-items-center">
-            <h3>< Stiamo lavorando per voi /></h3>
+        <main class="flex-fill d-flex justify-content-center align-items-center position-relative">
+
+            <!-- Barra Notizie -->
+            <div class="position-absolute top-0 start-50 translate-middle-x bg-black p-2 container-fluid
+                d-flex justify-content-center">
+                <p class="m-0 fs-5 text-uppercase fw-bold d-none d-lg-block novità" style="color: #ffff00;">
+                    20<sup>A</sup> Edizione - Festival di Teatro e Lettura - dal 10 Settembre al 3 Ottobre 2025
+                </p>
+                <p class="spectral m-0 fs-5 text-uppercase fw-bold d-block d-lg-none novità" style="color: #ffff00;">
+                    20<sup>A</sup> Edizione
+                </p>
+            </div>
+
+            <p class="fs-4 text-center">
+                < Stiamo lavorando per voi />
+            </p>
         </main>
         
         <!-- Footer -->

@@ -31,15 +31,3 @@ a {
 a:hover {
   text-decoration: none;
 }
-
-/* Limita la lunghezza del testo delle descrizioni delle card */
-.card-text {
-  display: -webkit-box;
-  -webkit-line-clamp: 6; /* Limita a 6 righe */
-  line-clamp: 6; /* Proprietà standard per compatibilità */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  line-height: 1.4;
-  max-height: calc(1.4em * 6); /* 6 righe con line-height 1.4 */
-}
