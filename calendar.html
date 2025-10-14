@@ -190,7 +190,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">La Vegetariana</h5>
                                 <p class="card-text">
-                                    Lettura e discussione del romanzo "La Vegetariana". Un’occasione di confronto e riflessione 
+                                    Lettura e discussione del romanzo "La Vegetariana". Un'occasione di confronto e riflessione 
                                     sul rapporto tra natura e identità personale.
                                 </p>
                                 <div class="card-info d-flex flex-wrap gap-2 mb-3">
@@ -218,7 +218,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Orgoglio e Pregiudizio</h5>
                                 <p class="card-text">
-                                    Lettura e discussione del romanzo "Orgoglio e Pregiudizio". Un’occasione di confronto e riflessione 
+                                    Lettura e discussione del romanzo "Orgoglio e Pregiudizio". Un'occasione di confronto e riflessione 
                                     sul rapporto tra natura e identità personale.
                                 </p>
                                 <div class="card-info d-flex flex-wrap gap-2 mb-3">
@@ -239,9 +239,9 @@
                             <img src="./images/eventi/FAL2025_Farandola-di-cuori.jpg" class="card-img-top" alt="La Vegetariana"
                                 style="height: 220px; object-fit: cover;">
                             <div class="card-body">
-                                <h5 class="card-title">Farandola di Cuori</h5>
+                                <h5 class="card-title">Il Gattopardo - parte Iª</h5>
                                 <p class="card-text">
-                                    Lettura e discussione del romanzo "La Vegetariana". Un’occasione di confronto e riflessione 
+                                    Lettura e discussione del romanzo "La Vegetariana". Un'occasione di confronto e riflessione 
                                     sul rapporto tra natura e identità personale.
                                 </p>
                                 <div class="card-info d-flex flex-wrap gap-2 mb-3">
@@ -276,7 +276,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">La Vegetariana</h5>
                                 <p class="card-text">
-                                    Lettura e discussione del romanzo "La Vegetariana". Un’occasione di confronto e riflessione 
+                                    Lettura e discussione del romanzo "La Vegetariana". Un'occasione di confronto e riflessione 
                                     sul rapporto tra natura e identità personale.
                                 </p>
                                 <div class="card-info d-flex flex-wrap gap-2 mb-3">
@@ -302,7 +302,7 @@
                             <div class="card-body">
                                 <h5 class="card-title">Orgoglio e Pregiudizio</h5>
                                 <p class="card-text">
-                                    Lettura e discussione del romanzo "Orgoglio e Pregiudizio". Un’occasione di confronto e riflessione 
+                                    Lettura e discussione del romanzo "Orgoglio e Pregiudizio". Un'occasione di confronto e riflessione 
                                     sul rapporto tra natura e identità personale.
                                 </p>
                                 <div class="card-info d-flex flex-wrap gap-2 mb-3">
@@ -322,10 +322,10 @@
             </div>
         </main>
 
-        <!-- Modal prenotamento -->
+        <!-- Modal prenotazione -->
         <div class="modal fade" id="modalPrenotamento" tabindex="-1" aria-labelledby="modalPrenotamentoLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
-                <div class="modal-content p-1 rounded-5">
+                <div id="sfondoModal" class="modal-content p-1 rounded-5">
                     <div class="modal-header p-3">
                         <h5 class="modal-title fw-bold">Evento...</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -340,26 +340,12 @@
                         <div class="row m-0 mt-2">
                             <div class="col-12 col-md-6 p-0">
                                 <ul class="listaPrenotazione list-group p-0">
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        (nome e cognome)
-                                        <span class="badge text-bg-danger rounded-pill"><i class="bi bi-trash"></i></span>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        altri utenti
-                                        <span class="badge text-bg-danger rounded-pill"><i class="bi bi-trash"></i></span>
-                                    </li>
+                                    
                                 </ul>
                             </div>
                             <div class="col-12 col-md-6 p-0">
                                 <ul class="listaPrenotazione list-group p-0">
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        altri utenti
-                                        <span class="badge text-bg-danger rounded-pill"><i class="bi bi-trash"></i></span>
-                                    </li>
-                                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                                        altri utenti
-                                        <span class="badge text-bg-danger rounded-pill"><i class="bi bi-trash"></i></span>
-                                    </li>
+                                    
                                 </ul>
                             </div>
                         </div>
@@ -384,7 +370,7 @@
                             </div>
                         </div>
                         <div class="row m-0 mt-2">
-                            <button type="button" class="btn btn-primary px-4 py-2 rounded-3 w-100">
+                            <button type="button" class="btn btn-outline-warning px-4 py-2 rounded-3 w-100">
                                 Aggiungi Utente
                             </button>
                         </div>
