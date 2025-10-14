@@ -95,17 +95,3 @@ footer {
 #sidebar {
     background-color: #ffff00;
 }
-
-/* Bordo per bottoni: classe riutilizzabile per aggiungere un bordo visibile */
-.btn-bordered {
-    border: 2px solid #000; /* colore e spessore del bordo */
-    border-radius: 8px;     /* arrotondamento facoltativo */
-    padding: 0.375rem 0.75rem;
-    background-color: transparent; /* lascia che classi di Bootstrap possano sovrascrivere il background */
-    color: inherit;
-    transition: box-shadow 0.15s ease, transform 0.12s ease;
-}
-.btn-bordered:hover {
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-    transform: translateY(-1px);
-}
