@@ -9,6 +9,10 @@ nav {
     text-decoration: none;
 }
 
+.spectral {
+    font-family: "Spectral SC", serif;
+}
+
 .nav-title {
     font-family: "Spectral SC", serif;
     text-transform: uppercase;
@@ -69,7 +73,7 @@ footer {
 }
 
 @media (max-width: 400px) {
-    .nav-logo img {
+    .nav-logo-img {
         height: 2rem;
     }
 

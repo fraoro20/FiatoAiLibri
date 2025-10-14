@@ -26,21 +26,21 @@ function showForm(formType) {
 }
 
 //temporaneo
-const form = document.getElementById("accedi");
+// const form = document.getElementById("accedi");
 
-form.addEventListener("click", (event) => {
-    var emailValida = "test@majorana.org";
-    var passwordValida = "test";
+// form.addEventListener("click", (event) => {
+//     var emailValida = "test@majorana.org";
+//     var passwordValida = "test";
 
-    var email = document.getElementById("EmailLogin").value;
-    var password = document.getElementById("PasswordLogin").value;
+//     var email = document.getElementById("EmailLogin").value;
+//     var password = document.getElementById("PasswordLogin").value;
 
-    if(email != emailValida || password != passwordValida)
-        alert("Email o password errati");
-    else
-    {
-        document.getElementsByName("btnAccesso").add("d-none");
-        document.getElementsByName("userName").textContent("Moretti")
-        document.getElementsByName("userName").remove("d-none");
-    }  
-})
+//     if(email != emailValida || password != passwordValida)
+//         alert("Email o password errati");
+//     else
+//     {
+//         document.getElementsByName("btnAccesso").add("d-none");
+//         document.getElementsByName("userName").textContent("Moretti")
+//         document.getElementsByName("userName").remove("d-none");
+//     }  
+// })

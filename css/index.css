@@ -1,0 +1,24 @@
+#nameEvent {
+    color: #ffff00;
+}
+
+/* Stile per la barra notizie mobile */
+@media (max-width: 768px) {
+    .news-text-full {
+        display: none;
+    }
+    
+    .news-text-mobile {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .news-text-full {
+        display: block;
+    }
+    
+    .news-text-mobile {
+        display: none;
+    }
+}
