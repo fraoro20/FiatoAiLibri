@@ -1,0 +1,10 @@
+.bordo {
+    border: 3px solid #000; /* colore e spessore del bordo */
+    border-radius: 8px; 
+    width: 100%;
+    height: auto;
+    display: block;    /* arrotondamento facoltativo */
+}
+.bottone {
+    box-shadow: 18px;
+}
