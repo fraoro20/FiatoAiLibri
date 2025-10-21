@@ -3,11 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="../images/logo.jpg" type="image/jpg">
+        <link rel="icon" href="./images/logo.jpg" type="image/jpg">
         <title>Fiato ai Libri</title>
         <meta name="description" content="Fiato ai Libri ritorna e prende il largo tra libri, musica e teatro.">
         <link rel="stylesheet" href="../css/mainLayout.css">
         <link rel="stylesheet" href="./css/areaRiservata.css">
+        
         <!-- Collegamento css bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
             integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -42,64 +43,47 @@
                 </div>
             </div>
         </nav>
-        
-        <!-- Contenuto centrale -->
-        <main class="flex-fill d-flex justify-content-center position-relative">
 
-            <div class="col-2 bg-secondary">
-                <!-- Menu laterale dashboard permanente -->
-                <div class="offcanvas-full flex-fill" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
-                    <div class="offcanvas-header justify-content-center">
-                        <h5 class="offcanvas-title" id="sidebarLabel">Area Riservata</h5>
-                        <button type="button" class="btn-close text-reset d-xl-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body p-0">
-                        <nav class="nav flex-column">
-                            <a class="nav-link active" href="#dashboard">
-                                <i class="bi bi-speedometer2 me-3"></i>
-                                Dashboard
-                            </a>
-                            <a class="nav-link" href="#eventi">
-                                <i class="bi bi-calendar-event me-3"></i>
-                                Gestione Eventi
-                            </a>
-                            <a class="nav-link" href="#prenotazioni">
-                                <i class="bi bi-people me-3"></i>
-                                Prenotazioni
-                            </a>
-                            <a class="nav-link" href="#utenti">
-                                <i class="bi bi-person-lines-fill me-3"></i>
-                                Utenti
-                            </a>
-                            <a class="nav-link" href="#newsletter">
-                                <i class="bi bi-envelope me-3"></i>
-                                Newsletter
-                            </a>
-                            <a class="nav-link" href="#statistiche">
-                                <i class="bi bi-bar-chart me-3"></i>
-                                Statistiche
-                            </a>
-                            <a class="nav-link" href="#impostazioni">
-                                <i class="bi bi-gear me-3"></i>
-                                Impostazioni
-                            </a>
-                            <hr class="text-white-50 mx-3 my-3">
-                            <a class="nav-link" href="../index.html">
-                                <i class="bi bi-house me-3"></i>
-                                Torna al Sito
-                            </a>
-                            <a class="nav-link" href="#logout">
-                                <i class="bi bi-box-arrow-right me-3"></i>
-                                Logout
-                            </a>
-                        </nav>
-                    </div>
+        <!-- Menu laterale -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+            <div class="offcanvas-header pt-4">
+                <h5 class="offcanvas-title nav-title" id="sidebarLabel">Fiato Ai Libri</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body"></div>
+            <div class="offcanvas-footer">
+                <div class="p-3">
+                    <button type="button" class="btn" style="background-color: #ee914d; color: black; border: none;"
+                        data-bs-toggle="modal" data-bs-target="#authModal">
+                        <i class="bi bi-person-circle"></i>
+                        Ciao, Mario Rossi
+                    </button>
                 </div>
             </div>
-            <div class="col-10 p-4 bg-primary" id="content-area">
-                <!-- Contenuto dinamico caricato qui -->
-                <h2>Benvenuto nell'Area Riservata</h2>
-                <p>Seleziona una voce dal menu laterale per gestire gli eventi, le prenotazioni, gli utenti e altro ancora.</p>
+        </div>
+        
+        <!-- Contenuto centrale -->
+        <main class="row flex-fill">
+            <div class="col-2 d-none d-xl-block p-0 m-0 text-center">
+                <div class="row">
+                    <i class="bi bi-speedometer2 me-3 fs-5"></i>
+                    <span>Dashboard</span>
+                </div>
+                <div class="row">
+                    <i class="bi bi-speedometer2 me-3 fs-5"></i>
+                        <span>Dashboard</span>
+                </div>
+                <div class="row">
+                    <i class="bi bi-speedometer2 me-3 fs-5"></i>
+                        <span>Dashboard</span>
+                </div>
+                <div class="row">
+                    <i class="bi bi-speedometer2 me-3 fs-5"></i>
+                        <span>Dashboard</span>
+                </div>
+            </div>
+            <div class="col-12 col-xl-10">
+
             </div>
         </main>
         
@@ -116,7 +100,8 @@
                 <div class="col-12 d-flex flex-column flex-sm-row justify-content-center align-items-center">
                     <p class="text-footer">Sistema Bibliotecario Seriate Laghi<br>
                         <a href="mailto:sistema.bibliotecario@comune.seriate.bg.it">
-                            sistema.bibliotecario@comune.seriate.bg.it</a>
+                            sistema.bibliotecario@comune.seriate.bg.it
+                        </a>
                     </p>
                 </div>
             </div>
@@ -125,33 +110,5 @@
         <!-- Collegamento js bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-        
-        <!-- Script per gestire la navigazione attiva -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const navLinks = document.querySelectorAll('.nav-link');
-                
-                navLinks.forEach(link => {
-                    link.addEventListener('click', function(e) {
-                        if (this.getAttribute('href').startsWith('#') && 
-                            this.getAttribute('href') !== '#logout' &&
-                            !this.getAttribute('href').includes('../')) {
-                            
-                            e.preventDefault();
-                            
-                            // Remove active class from all links
-                            navLinks.forEach(l => l.classList.remove('active'));
-                            
-                            // Add active class to clicked link
-                            this.classList.add('active');
-                            
-                            // Log navigation (qui puoi aggiungere logica per cambiare contenuto)
-                            console.log('Navigating to:', this.getAttribute('href'));
-                        }
-                    });
-                });
-            });
-        </script>
-        
     </body>
 </html>
