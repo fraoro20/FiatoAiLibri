@@ -20,44 +20,87 @@
         <nav class="container-fluid p-3">
             <div class="row align-items-center">
                 <div class="col-xl-4 col-10 d-flex align-items-center justify-content-start p-1">
-                    <div class="col-2 d-xl-none d-flex align-items-center justify-content-end p-0">
-                    <a class="btn" data-bs-toggle="offcanvas" href="#sidebar" role="button" aria-controls="sidebar">
-                        <i class="bi bi-list fs-1"></i>
-                    </a>
-                </div>
                     <img src="../images/logo-seriate-laghi-2023.png" alt="Seriate Laghi Logo" height="60px" class="nav-logo-img">
                     <div class="mx-2 vertical-line"></div>
                     <a href="https://fiatoailibri.it/" class="nav-logo d-flex align-items-center justify-content-start" target="_blank">
                         <h1 class="m-0 nav-title">Fiato Ai Libri</h1>
                     </a>
                 </div>
+                <div class="col-8 d-none d-xl-flex p-1 align-items-center">
+                    <div class="ms-auto" style="margin-right: 20px;">
+                        <button type="button" class="btn" style="background-color: #ee914d; color: black; border: none;"
+                            data-bs-toggle="modal" data-bs-target="#authModal">
+                            <i class="bi bi-person-circle"></i>
+                            Ciao, Mario Rossi
+                        </button>
+                    </div>
+                </div>
+                <div class="col-2 d-xl-none d-flex align-items-center justify-content-end p-0">
+                    <a class="btn" data-bs-toggle="offcanvas" href="#sidebar" role="button" aria-controls="sidebar">
+                        <i class="bi bi-list fs-1"></i>
+                    </a>
+                </div>
             </div>
         </nav>
-
-        <!-- Menu laterale dashboard permanente -->
-        <div class="container-xl
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="sidebarLabel">Area Riservata</h5>
-                <button type="button" class="btn-close text-reset d-xl-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body p-0">
-                <nav class="nav flex-column gap-2 p-3">
-                    <a class="nav-link" href="dashboard.html">Dashboard</a>
-                    <a class="nav-link" href="gestione-eventi.html">Gestione Eventi</a>
-                    <a class="nav-link" href="gestione-partecipanti.html">Gestione Partecipanti</a>
-                    <a class="nav-link" href="statistiche.html">Statistiche</a>
-                    <a class="nav-link" href="impostazioni.html">Impostazioni</a>
-                    <a class="nav-link" href="../index.html">Torna al sito</a>
-                </nav>
-            </div>
-        </div>
         
         <!-- Contenuto centrale -->
-        <main class="flex-fill d-flex justify-content-center align-items-center position-relative">
+        <main class="flex-fill d-flex justify-content-center position-relative">
 
-            <p class="fs-4 text-center">
-                < Stiamo lavorando per voi />
-            </p>
+            <div class="col-2 bg-secondary">
+                <!-- Menu laterale dashboard permanente -->
+                <div class="offcanvas-full flex-fill" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+                    <div class="offcanvas-header justify-content-center">
+                        <h5 class="offcanvas-title" id="sidebarLabel">Area Riservata</h5>
+                        <button type="button" class="btn-close text-reset d-xl-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body p-0">
+                        <nav class="nav flex-column">
+                            <a class="nav-link active" href="#dashboard">
+                                <i class="bi bi-speedometer2 me-3"></i>
+                                Dashboard
+                            </a>
+                            <a class="nav-link" href="#eventi">
+                                <i class="bi bi-calendar-event me-3"></i>
+                                Gestione Eventi
+                            </a>
+                            <a class="nav-link" href="#prenotazioni">
+                                <i class="bi bi-people me-3"></i>
+                                Prenotazioni
+                            </a>
+                            <a class="nav-link" href="#utenti">
+                                <i class="bi bi-person-lines-fill me-3"></i>
+                                Utenti
+                            </a>
+                            <a class="nav-link" href="#newsletter">
+                                <i class="bi bi-envelope me-3"></i>
+                                Newsletter
+                            </a>
+                            <a class="nav-link" href="#statistiche">
+                                <i class="bi bi-bar-chart me-3"></i>
+                                Statistiche
+                            </a>
+                            <a class="nav-link" href="#impostazioni">
+                                <i class="bi bi-gear me-3"></i>
+                                Impostazioni
+                            </a>
+                            <hr class="text-white-50 mx-3 my-3">
+                            <a class="nav-link" href="../index.html">
+                                <i class="bi bi-house me-3"></i>
+                                Torna al Sito
+                            </a>
+                            <a class="nav-link" href="#logout">
+                                <i class="bi bi-box-arrow-right me-3"></i>
+                                Logout
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-10 p-4 bg-primary" id="content-area">
+                <!-- Contenuto dinamico caricato qui -->
+                <h2>Benvenuto nell'Area Riservata</h2>
+                <p>Seleziona una voce dal menu laterale per gestire gli eventi, le prenotazioni, gli utenti e altro ancora.</p>
+            </div>
         </main>
         
         <!-- Footer -->
@@ -82,6 +125,33 @@
         <!-- Collegamento js bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        
+        <!-- Script per gestire la navigazione attiva -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const navLinks = document.querySelectorAll('.nav-link');
+                
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        if (this.getAttribute('href').startsWith('#') && 
+                            this.getAttribute('href') !== '#logout' &&
+                            !this.getAttribute('href').includes('../')) {
+                            
+                            e.preventDefault();
+                            
+                            // Remove active class from all links
+                            navLinks.forEach(l => l.classList.remove('active'));
+                            
+                            // Add active class to clicked link
+                            this.classList.add('active');
+                            
+                            // Log navigation (qui puoi aggiungere logica per cambiare contenuto)
+                            console.log('Navigating to:', this.getAttribute('href'));
+                        }
+                    });
+                });
+            });
+        </script>
         
     </body>
 </html>
