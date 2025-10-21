@@ -22,6 +22,31 @@ function controlloAccesso(isRegistrato) {
     }
 }
 
+//Scopri di piu
+let cardText = document.getElementsByClassName("card-text");
+
+for (let i = 0; i < cardText.length; i++) {
+    const text = cardText[i].textContent.trim();    //Toglie gli spazi all'inizio e alla fine
+
+    if (text.length > 400) {
+        const shortText = text.slice(0, 400) + '...';
+        cardText[i].textContent = shortText;
+    }
+}
+
+const infoBtn = document.getElementsByClassName("infoBtn");
+const modalInformazioni = new bootstrap.Modal("#modalInfo");
+const cardTitolo = document.getElementsByClassName("card-title");
+const TitoloInfo = document.getElementById("titoloInfo");
+
+//Modifichiamo il titolo
+for (let i = 0; i < infoBtn.length; i++) {
+    infoBtn[i].addEventListener("click", function() {
+        const titolo = cardTitolo[i].textContent;
+        TitoloInfo.textContent = titolo;
+    });
+}
+
 //Aggiunta utente form di prenotazione
 const aggiungiUtenteBtn = document.getElementById('aggiungiUtenteBtn');
 const nomeInput = document.getElementById('nomePrenotazione');
