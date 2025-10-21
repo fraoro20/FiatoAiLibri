@@ -213,11 +213,11 @@
                                     <span><i class="bi bi-person"></i> Han Kang</span>
                                 </div>
                                 <div class="d-flex justify-content-end mt-auto gap-2">
-                                    <button type="button" class="btn btn-outline-primary px-4 py-2 rounded-5 infoBtn" data-bs-toggle="modal" data-bs-target="#modalInfo">
-                                        Scopri di più
-                                    </button>
                                     <button type="button" class="prenotaBtn btn btn-warning px-4 py-2 rounded-5">
                                         Prenota
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary px-4 py-2 rounded-5 infoBtn" data-bs-toggle="modal" data-bs-target="#modalInfo">
+                                        Scopri di più
                                     </button>
                                 </div>
                             </div>
@@ -398,11 +398,11 @@
         <div class="modal fade" id="modalInfo" tabindex="-1" aria-labelledby="modalInfoLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div id="sfondoModal" class="modal-content p-1 rounded-5">
-                    <div class="modal-header p-3">
-                        <h5 id="titoloInfo" class="modal-title fw-bold">Evento...</h5>
+                    <div class="modal-header p-3" style="border: none;">
+                        <h5 id="titoloInfo" class="modal-title fw-bold"></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body p-3">
+                    <div class="modal-body p-0">
                         
                     </div>
                 </div>
@@ -410,59 +410,17 @@
         </div>
 
         <!-- Modal prenotazione -->
-        <div class="modal fade" id="modalPrenotamento" tabindex="-1" aria-labelledby="modalPrenotamentoLabel" aria-hidden="true">
+        <div class="modal fade" id="modalPrenotazione" tabindex="-1" aria-labelledby="modalPrenotazioneLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div id="sfondoModal" class="modal-content p-1 rounded-5">
-                    <div class="modal-header p-3">
-                        <h5 class="modal-title fw-bold">Evento...</h5>
+                    <div class="modal-header p-3" style="border: none;">
+                        <h5 id="titoloPrenotazione" class="modal-title fw-bold"></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body p-3">
-                        <div class="row m-0">
-                            <div class="d-flex m-0 p-0 gap-1">
-                                <p class="m-0">Posti disponibili:</p>
-                                <p class="m-0 text-success">100</p>
-                            </div>
-                        </div>
-                        <div class="row m-0 mt-2">
-                            <div class="col-12 col-md-6 p-0">
-                                <ul class="listaPrenotazione list-group p-0">
-                                    
-                                </ul>
-                            </div>
-                            <div class="col-12 col-md-6 p-0">
-                                <ul class="listaPrenotazione list-group p-0">
-                                    
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row m-0 mt-2">
-                            <div class="col-6 p-0 pe-1">
-                                <div class="form-floating"> 
-                                    <input type="text" class="form-control" id="nomePrenotazione" 
-                                        placeholder="text" autocomplete="text">
-                                    <label for="nomePrenotazione">
-                                        Nome
-                                    </label>
-                                </div> 
-                            </div>
-                            <div class="col-6 p-0 ps-1">
-                                <div class="form-floating"> 
-                                    <input type="text" class="form-control" id="cognomePrenotazione" 
-                                        placeholder="text" autocomplete="current-text">
-                                    <label for="cognomePrenotazione">
-                                        Cognome
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row m-0 mt-2">
-                            <button type="button" class="btn btn-outline-warning px-4 py-2 rounded-3 w-100" id="aggiungiUtenteBtn">
-                                Aggiungi Utente
-                            </button>
-                        </div>
+                    <div class="modal-body p-0">
+                        
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer" style="border: none;">
                         <button type="button" class="btn btn-warning px-4 py-2 rounded-3 w-100">
                             Conferma Prenotazione
                         </button>

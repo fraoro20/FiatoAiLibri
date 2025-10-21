@@ -11,19 +11,6 @@
   text-decoration: none;
 }
 
-.listaPrenotazione li {
-  border: none;
-  border-bottom: 1px solid black;
-}
-
-.listaPrenotazione li:last-child {
-  border: none;
-}
-
-#sfondoAutore {
-  background-color: #ee914d;
-}
-
 a {
   text-decoration: none;
 }
