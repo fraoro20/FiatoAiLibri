@@ -167,65 +167,56 @@
             </div>
         </div>
 
-        <!-- Modal 2024 -->
-        <div class="modal fade" id="2024Modal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content p-1 rounded-5">
-                    <div class="modal-body p-0">
-                        <div class="container">
-                            <div class="row d-flex justify-content-end pt-3 px-3">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="row px-3">
-                                <h1 class="text-center fw-bold">Edizione 2024</h1>
-                                <body class="text-center">
-                                    <p>ciaoooooo</p>
+        <!-- Contenuto centrale -->
+        <main class="flex-fill d-flex flex-column align-items-center">
+            <div class="container py-5">
+                <h2 class="mb-5 fs-2 text-center fw-bold">Edizioni passate</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <div class="card rounded-3 bg-warning h-100" role="button" data-bs-toggle="modal" data-bs-target="#modalEdizioni"
+                            style="cursor: pointer;">
+                            <div class="card-body text-center">
+                                <img src="./images/edizioniPassate/FAL2024.png" class="img-fluid bordo mb-3" alt="Edizione 2024">
+                                <h3 class="fw-bold text-dark mb-0">Anno 2024</h3>
                             </div>
                         </div>
                     </div>
-                        <div class="p-3 bg-trasparent">
-                        </div> 
+                    <div class="col">
+                        <div class="card rounded-3 bg-warning h-100" role="button" data-bs-toggle="modal" data-bs-target="#modalEdizioni"
+                            style="cursor: pointer;">
+                            <div class="card-body text-center">
+                                <img src="./images/edizioniPassate/FAL2024.png" class="img-fluid bordo mb-3" alt="Edizione 2023">
+                                <h3 class="fw-bold text-dark mb-0">Anno 2023</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card rounded-3 bg-warning h-100" role="button" data-bs-toggle="modal" data-bs-target="#modalEdizioni"
+                            style="cursor: pointer;">
+                            <div class="card-body text-center">
+                                <img src="./images/edizioniPassate/FAL2024.png" class="img-fluid bordo mb-3" alt="Edizione 2022">
+                                <h3 class="fw-bold text-dark mb-0">Anno 2022</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Modal edizioni passate -->
+        <div class="modal fade" id="modalEdizioni" tabindex="-1" aria-labelledby="modalEdizioniLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div id="sfondoModal" class="modal-content p-1 rounded-5">
+                    <div class="modal-header p-3" style="border: none;">
+                        <h5 id="titoloInfo" class="modal-title fw-bold">Edizione...</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        
+                    </div>
                 </div>
             </div>
         </div>
-
-        
-        <!-- Contenuto centrale -->
-        <main class="flex-fill d-flex align justify-content-center">
-            <div class="row w-100 justify-content-center">
-                <div class="container py-5">
-                <h2 class="mb-5 fs-2 text-center fw-bold">Edizioni passate</h2>
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 g-none-0">
-                    <div class="col">
-                        <button class="card rounded-3 bg-warning h-100" style="overflow: hidden;" data-bs-toggle="modal" data-bs-target="#2024Modal">
-                            <div class="card-body text-dark text-align-center" style="overflow: hidden;">
-                                <img src="./images/edizioniPassate/FAL2024.png" class="bordo">
-                                <h3>
-                                    <b>Anno 2024</b>
-                                </h3>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="col">
-                        <div class="card rounded-3 h-100" style="overflow: hidden;">
-                            <div class="card-body bg-warning text-dark text-center" style="overflow: hidden;">
-                                <p>
-                                    <b>Anno 2023</b>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card rounded-3 h-100" style="overflow: hidden;">
-                            <div class="card-body bg-warning text-dark text-center" style="overflow: hidden;">
-                                <button type="button" class="btn bottone" data-bs-toggle="modal" data-bs-target="#2024Modal">
-                                    <b>Anno 2022</b>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </main>
         
         <!-- Footer -->
         <footer class="container-fluid">
