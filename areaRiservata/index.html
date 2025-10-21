@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../images/logo.jpg" type="image/jpg">
+        <title>Fiato ai Libri</title>
+        <meta name="description" content="Fiato ai Libri ritorna e prende il largo tra libri, musica e teatro.">
+        <link rel="stylesheet" href="../css/mainLayout.css">
+        <link rel="stylesheet" href="./css/areaRiservata.css">
+        <!-- Collegamento css bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!-- Collegamento icone bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        
+        <!-- Navbar -->
+        <nav class="container-fluid p-3">
+            <div class="row align-items-center">
+                <div class="col-xl-4 col-10 d-flex align-items-center justify-content-start p-1">
+                    <div class="col-2 d-xl-none d-flex align-items-center justify-content-end p-0">
+                    <a class="btn" data-bs-toggle="offcanvas" href="#sidebar" role="button" aria-controls="sidebar">
+                        <i class="bi bi-list fs-1"></i>
+                    </a>
+                </div>
+                    <img src="../images/logo-seriate-laghi-2023.png" alt="Seriate Laghi Logo" height="60px" class="nav-logo-img">
+                    <div class="mx-2 vertical-line"></div>
+                    <a href="https://fiatoailibri.it/" class="nav-logo d-flex align-items-center justify-content-start" target="_blank">
+                        <h1 class="m-0 nav-title">Fiato Ai Libri</h1>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Menu laterale dashboard permanente -->
+        <div class="container-xl
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="sidebarLabel">Area Riservata</h5>
+                <button type="button" class="btn-close text-reset d-xl-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <nav class="nav flex-column gap-2 p-3">
+                    <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    <a class="nav-link" href="gestione-eventi.html">Gestione Eventi</a>
+                    <a class="nav-link" href="gestione-partecipanti.html">Gestione Partecipanti</a>
+                    <a class="nav-link" href="statistiche.html">Statistiche</a>
+                    <a class="nav-link" href="impostazioni.html">Impostazioni</a>
+                    <a class="nav-link" href="../index.html">Torna al sito</a>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Contenuto centrale -->
+        <main class="flex-fill d-flex justify-content-center align-items-center position-relative">
+
+            <p class="fs-4 text-center">
+                < Stiamo lavorando per voi />
+            </p>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="container-fluid">
+            <div class="row text-center">
+                <div class="footer-icon col-12 mt-2 p-2">
+                    <a href="https://www.instagram.com/fiatoailibri/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.facebook.com/fiatoailibri"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@fiatoailibri"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="row text-center p-2">
+                <div class="col-12 d-flex flex-column flex-sm-row justify-content-center align-items-center">
+                    <p class="text-footer">Sistema Bibliotecario Seriate Laghi<br>
+                        <a href="mailto:sistema.bibliotecario@comune.seriate.bg.it">
+                            sistema.bibliotecario@comune.seriate.bg.it</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Collegamento js bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
