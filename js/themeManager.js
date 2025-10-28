@@ -55,7 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 navLogo.alt = 'Halloween Logo';
                 navLogo.style.width = '80px';
                 navLogo.style.height = '70px';
-               
             }
             
             // Aggiungi ragnatele negli angoli
