@@ -38,9 +38,8 @@
                             <li><a href="contact.html">Contattaci</a></li>
                         </ul>
                     </div>
-                    <div class="ms-auto" style="margin-right: 20px;">
-                        <button type="button" class="btn" style="background-color: #ee914d; color: black; border: none;"
-                            data-bs-toggle="modal" data-bs-target="#authModal">
+                    <div class="ms-auto btn-custom" style="margin-right: 20px;">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#authModal">
                             <i class="bi bi-person-circle"></i>
                             Accedi
                         </button>
@@ -75,11 +74,12 @@
             </div>
             <div class="offcanvas-footer">
                 <div class="p-3">
-                    <button type="button" class="btn" style="background-color: #ee914d; color: black; border: none;"
-                        data-bs-toggle="modal" data-bs-target="#authModal">
-                        <i class="bi bi-person-circle"></i>
-                        Accedi
-                    </button>
+                    <div class="btn-custom">
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#authModal">
+                            <i class="bi bi-person-circle"></i>
+                            Accedi
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@
                                         <i class="bi bi-lock me-2 text-warning"></i>Password
                                     </label>
                                 </div>
-                                <button class="btn btn-warning w-100 rounded-3 mt-3" data-bs-dismiss="modal" type="submit">Accedi</button>
+                                <button id="accedi" class="btn btn-warning w-100 rounded-3 mt-3" data-bs-dismiss="modal" type="submit">Accedi</button>
                             </form>
 
                             <!-- Registrazione -->
@@ -223,7 +223,6 @@
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         <!-- Script per lo slider login/register -->
         <script src="./js/auth.js"></script>
-
         <!-- Script Theme Manager Halloween -->
         <script src="./js/themeManager.js"></script>
     </body>

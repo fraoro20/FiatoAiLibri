@@ -25,8 +25,7 @@ function showForm(formType) {
     }
 }
 
-// azione bottone modal accedi
+// Funzione per andare all'area riservata tramite il bottone accedi del modal login
 document.getElementById('accedi').addEventListener('click', function () {
-    // redirect dashboard
     window.location.href = '/areaRiservata';
 });

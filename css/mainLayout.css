@@ -5,7 +5,7 @@ nav {
     background-color:  #ffff00;
     position: sticky;
     top: 0;
-    z-index: 1000; /* Assicura che la navbar sia sopra altri contenuti */
+    z-index: 3;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -48,6 +48,13 @@ nav {
 .nav-link a.selected {
     border-bottom-color: #ea914d;
     transition: border-color 0.3s;
+}
+
+.btn-custom {
+    background-color: #ea914d;
+    color: black; 
+    border-radius: 7px;
+    width: 95px;
 }
 
 footer {

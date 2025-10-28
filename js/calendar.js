@@ -45,8 +45,8 @@ for (let i = 0; i < infoBtn.length; i++) {
     infoBtn[i].addEventListener("click", function() {
         const titolo = cardTitolo[i].textContent;
         TitoloInfo.textContent = titolo;
-        const desc = cardDesc[i].textContent;
-        DescInfo.textContent = desc;
+        const descrizione = cardDesc[i].textContent;
+        DescInfo.textContent = descrizione;
     });
 }
 

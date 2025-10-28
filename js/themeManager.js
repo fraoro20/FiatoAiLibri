@@ -2,10 +2,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const storageKey = 'halloween_mode';
     const mainLayoutCSS = './css/mainLayout.css';
-    const halloweenCSS = './css/aulin.css';
+    const halloweenCSS = './css/halloween.css';
     
     // Trova il link CSS principale
-    const cssLink = document.querySelector('link[href*="mainLayout.css"], link[href*="aulin.css"]');
+    const cssLink = document.querySelector('link[href*="mainLayout.css"], link[href*="halloween.css"]');
 
     
     // Applica il tema salvato
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function toggleTheme() {
         if (!cssLink) return;
         
-        const currentlyHalloween = cssLink.href.includes('aulin.css');
+        const currentlyHalloween = cssLink.href.includes('halloween.css');
         
         if (currentlyHalloween) {
             // Passa al tema normale
@@ -41,19 +41,19 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (!button) return;
         
-        const isHalloween = cssLink.href.includes('aulin.css');
+        const isHalloween = cssLink.href.includes('halloween.css');
         
         if (isHalloween) {
             if (icon) icon.className = 'bi bi-brightness-high me-2';
             if (text) text.textContent = 'Modalità Normale';
-            button.style.backgroundColor = '#ffaa00';
+            button.style.backgroundColor = '#ff6f00';
             
             // Aggiungi ragnatele negli angoli
             addWebCorners();
         } else {
             if (icon) icon.className = 'bi bi-moon-stars me-2';
             if (text) text.textContent = 'Modalità Halloween';
-            button.style.backgroundColor = '#ff6600';
+            button.style.backgroundColor = '#ea914d';
             
             // Rimuovi ragnatele
             removeWebCorners();

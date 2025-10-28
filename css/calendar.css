@@ -11,20 +11,20 @@
   text-decoration: none;
 }
 
-/* Limita visualmente il testo delle descrizioni mantenendo il contenuto completo */
 .card-text {
-  display: -webkit-box;
-  -webkit-line-clamp: 6; /* Mostra solo 6 righe */
-  line-clamp: 6; /* Proprietà standard per compatibilità */
-  -webkit-box-orient: vertical;
+  display: -webkit-box; /* Modello di layout flessibile di WebKit necessario per il line clamp */
+  -webkit-box-orient: vertical; /* Definisce la direzione del layout (verticale, quindi per righe del testo) */
+  -webkit-line-clamp: 6; /* Indica il numero massimo di linee da mostrare */
+  line-clamp: 6;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis;  /* Mostrano i … */
+  /* Serve per far sì che l’altezza massima del contenitore corrisponda esattamente a 6 righe, 
+    anche se -webkit-line-clamp non fosse supportato. */
   line-height: 1.5;
-  max-height: calc(1.5em * 6); /* 6 righe con line-height 1.5 */
+  max-height: calc(1.5em * 6);
 }
 
-/* Per mostrare il testo completo quando necessario (ad esempio nei modal) */
-.card-text.expanded {
+.expanded {
   display: block;
   -webkit-line-clamp: none;
   line-clamp: none;
@@ -32,24 +32,23 @@
   overflow: visible;
 }
 
-/* con questo stile il bordo della card pulsa quando è l'evento imminente */
-.card.imminent-event {
-  animation: pulseBorder 2s infinite;
-  transition: border-color 0.3s ease;
-  position: relative;
+.imminent-event {
+  animation: pulse 3s infinite;
   border: 3px solid #ff6b35;
-  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
-  transform: scale(1.02);
-
+  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.4);
 }
 
 @keyframes pulse {
-  0%, 100% {
-    opacity: 1;
+  0% {
     transform: scale(1);
+    border: 3px solid #ff6b35;
   }
   50% {
-    opacity: 0.8;
     transform: scale(1.05);
+    border: 3px solid #ff6b35;
+  }
+  100% {
+    transform: scale(1);
+    border: 3px solid #ff6b35;
   }
 }

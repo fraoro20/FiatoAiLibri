@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@400;700&display=swap');
-/* https://dev.to/therickedge/spooky-halloween-css-animations-39mk */
+
 nav {
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px rgb(255, 153, 0);
     background-color: #000000;
     position: sticky;
     top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(255, 102, 0, 0.3);
+    z-index: 3;
+    box-shadow: 0 2px 4px rgba(255, 153, 0, 0.1);
 }
 
 .nav-logo {
@@ -24,7 +24,7 @@ nav {
 .vertical-line {
     width: 2px;
     height: 50px;
-    background-color: black;
+    background-color: rgb(255, 153, 0);
 }
 
 .nav-link li {
@@ -37,7 +37,7 @@ nav {
 
 .nav-link a {
     text-decoration: none;
-    color: rgb(221, 125, 0);
+    color: rgb(255, 153, 0);
     border-bottom: 3px solid transparent;
     padding-bottom: 3px;
     padding-top: 3px;
@@ -50,8 +50,19 @@ nav {
     transition: border-color 0.3s;
 }
 
+.btn-custom {
+    background-color: #ff6f00;
+    color: black; 
+    border-radius: 7px;
+    width: 95px;
+}
+
+.bi-list {
+    color: rgb(255, 153, 0);
+}
+
 footer {
-    border-top: solid 2px black;
+    border-top: solid 2px rgb(255, 153, 0);
     background-color:  #000000;
 }
 
@@ -65,6 +76,7 @@ footer {
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     overflow-wrap: anywhere;
+    color: rgb(209, 101, 0);
 }
 
 .text-footer a {
@@ -100,7 +112,7 @@ footer {
     background-color: #000000;
 }
 
-/* Decorazioni Halloween */
+/* Decorazioni Halloween https://dev.to/therickedge/spooky-halloween-css-animations-39mk */
 body::before {
     content: "🕷️";
     position: fixed;
@@ -198,7 +210,6 @@ main::after {
     text-shadow: 0 0 10px #ff6f00;
     transition: text-shadow 0.3s ease;
 }
-
 
 .web-corner-top-left::after {
     content: "🕷️";
