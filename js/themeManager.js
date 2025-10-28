@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const button = document.querySelector('.halloween-toggle');
         const icon = button?.querySelector('i');
         const text = button?.querySelector('.toggle-text');
+        const navLogo = document.querySelector('.nav-logo-img'); // Seleziona il logo della navbar
         
         if (!button) return;
         
@@ -47,6 +48,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (icon) icon.className = 'bi bi-brightness-high me-2';
             if (text) text.textContent = 'Modalità Normale';
             button.style.backgroundColor = '#ff6f00';
+
+            // Cambia il logo per Halloween
+            if (navLogo) {
+                navLogo.src = './images/logo_halloween-removebg.png';
+                navLogo.alt = 'Halloween Logo';
+                navLogo.style.width = '80px';
+                navLogo.style.height = '70px';
+               
+            }
             
             // Aggiungi ragnatele negli angoli
             addWebCorners();
@@ -54,6 +64,14 @@ document.addEventListener('DOMContentLoaded', () => {
             if (icon) icon.className = 'bi bi-moon-stars me-2';
             if (text) text.textContent = 'Modalità Halloween';
             button.style.backgroundColor = '#ea914d';
+
+            // Ripristina il logo normale
+            if (navLogo) {
+                navLogo.src = './images/logo-seriate-laghi-2023.png';
+                navLogo.alt = 'Seriate Laghi Logo';
+                navLogo.style.width = 'fit-content';
+                navLogo.style.height = '60px';
+            }
             
             // Rimuovi ragnatele
             removeWebCorners();
