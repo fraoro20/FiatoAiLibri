@@ -24,3 +24,9 @@ function showForm(formType) {
         document.getElementById('loginForm').classList.add("noActiveForm");
     }
 }
+
+// azione bottone modal accedi
+document.getElementById('accedi').addEventListener('click', function () {
+    // redirect dashboard
+    window.location.href = '/areaRiservata';
+});

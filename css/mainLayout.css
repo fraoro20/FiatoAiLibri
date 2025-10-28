@@ -3,6 +3,10 @@
 nav {
     border-bottom: solid 2px black;
     background-color:  #ffff00;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Assicura che la navbar sia sopra altri contenuti */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-logo {
