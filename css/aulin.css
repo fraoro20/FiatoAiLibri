@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@400;700&display=swap');
+
+nav {
+    border-bottom: solid 2px black;
+    background-color:  #000000;
+}
+
+.nav-logo {
+    text-decoration: none;
+}
+
+.nav-title {
+    font-family: "Spectral SC", serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(255, 153, 0);
+    font-size: 1.4rem;
+}
+
+.vertical-line {
+    width: 2px;
+    height: 50px;
+    background-color: black;
+}
+
+.nav-link li {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: rgb(221, 125, 0);
+    border-bottom: 3px solid transparent;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    border-top: 3px solid transparent;
+}
+
+.nav-link a:hover,
+.nav-link a.selected {
+    border-bottom-color: #ff6f00;
+    transition: border-color 0.3s;
+}
+
+footer {
+    border-top: solid 2px black;
+    background-color:  #000000;
+}
+
+.footer-icon i {
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    font-size: 20px;
+}
+
+.text-footer {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+.text-footer a {
+    text-decoration: none;
+    color: rgb(209, 101, 0);
+}
+
+@media (max-width: 400px) {
+    .nav-logo-img {
+        height: 2rem;
+    }
+
+    .vertical-line {
+        width: 1px;
+        height: 35px;
+    }
+
+    .nav-title {
+        font-size: 1rem;
+    }
+
+    .footer-icon i {
+        padding: 8px;
+        font-size: 15px;
+    }
+
+    .text-footer {
+        font-size: 0.6rem;
+    }
+}
+
+#sidebar {
+    background-color: #000000;
+}
