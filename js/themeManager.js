@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Trova il link CSS principale
     const cssLink = document.querySelector('link[href*="mainLayout.css"], link[href*="aulin.css"]');
+
     
     // Applica il tema salvato
     const isHalloween = localStorage.getItem(storageKey) === 'true';
