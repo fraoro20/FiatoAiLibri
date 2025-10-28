@@ -10,3 +10,46 @@
   color: #0077cc;
   text-decoration: none;
 }
+
+/* Limita visualmente il testo delle descrizioni mantenendo il contenuto completo */
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* Mostra solo 6 righe */
+  line-clamp: 6; /* Proprietà standard per compatibilità */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+  max-height: calc(1.5em * 6); /* 6 righe con line-height 1.5 */
+}
+
+/* Per mostrare il testo completo quando necessario (ad esempio nei modal) */
+.card-text.expanded {
+  display: block;
+  -webkit-line-clamp: none;
+  line-clamp: none;
+  max-height: none;
+  overflow: visible;
+}
+
+/* con questo stile il bordo della card pulsa quando è l'evento imminente */
+.card.imminent-event {
+  animation: pulseBorder 2s infinite;
+  transition: border-color 0.3s ease;
+  position: relative;
+  border: 3px solid #ff6b35;
+  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+  transform: scale(1.02);
+
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
