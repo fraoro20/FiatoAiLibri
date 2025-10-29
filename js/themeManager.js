@@ -1,12 +1,9 @@
-// Theme Manager Semplice - Toggle tra tema normale e Halloween
 document.addEventListener('DOMContentLoaded', () => {
     const storageKey = 'halloween_mode';
     const mainLayoutCSS = './css/mainLayout.css';
     const halloweenCSS = './css/halloween.css';
     
-    // Trova il link CSS principale
     const cssLink = document.querySelector('link[href*="mainLayout.css"], link[href*="halloween.css"]');
-
     
     // Applica il tema salvato
     const isHalloween = localStorage.getItem(storageKey) === 'true';
@@ -14,11 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
         cssLink.href = halloweenCSS;
     }
     
-    // Toggle function
+    // Toggle del tema
     function toggleTheme() {
-        if (!cssLink) return;
+        if (!cssLink) 
+            return;
         
-        const currentlyHalloween = cssLink.href.includes('halloween.css');
+        const currentlyHalloween = cssLink.href.includes('halloween.css');  // Se il percorso include halloween.css ritorna true
         
         if (currentlyHalloween) {
             // Passa al tema normale
@@ -33,47 +31,53 @@ document.addEventListener('DOMContentLoaded', () => {
         updateButton();
     }
     
-    // Aggiorna il bottone
     function updateButton() {
         const button = document.querySelector('.halloween-toggle');
-        const icon = button?.querySelector('i');
-        const text = button?.querySelector('.toggle-text');
-        const navLogo = document.querySelector('.nav-logo-img'); // Seleziona il logo della navbar
+        const icon = button?.querySelector('i');    // Se esiste l'icona faccio associazione altrimenti assegno null
+        const text = button?.querySelector('.toggle-text'); // Se esiste il testo faccio associazione altrimenti assegno null
+        const navLogo = document.querySelector('.nav-logo-img');
         
-        if (!button) return;
+        if (!button) 
+            return;
         
-        const isHalloween = cssLink.href.includes('halloween.css');
+        const isHalloween = cssLink.href.includes('halloween.css'); // Se il percorso include halloween.css ritorna true
         
         if (isHalloween) {
-            if (icon) icon.className = 'bi bi-brightness-high me-2';
-            if (text) text.textContent = 'Modalità Normale';
+            // Cambia il bottone
+            if (icon)
+                icon.className = 'bi bi-brightness-high me-2';
+            if (text) 
+                text.textContent = 'Modalità Normale';
             button.style.backgroundColor = '#ff6f00';
 
-            // Cambia il logo per Halloween
+            // Cambia il logo
             if (navLogo) {
-                navLogo.src = '../images/logo_halloween.png';
+                navLogo.src = '/images/logo_halloween.png';
                 navLogo.alt = 'Halloween Logo';
             }
             
-            // Aggiungi ragnatele negli angoli
+            // Aggiungo le ragnatele
             addWebCorners();
         } else {
-            if (icon) icon.className = 'bi bi-moon-stars me-2';
-            if (text) text.textContent = 'Modalità Halloween';
+            // Ripristina il bottone
+            if (icon) 
+                icon.className = 'bi bi-moon-stars me-2';
+            if (text) 
+                text.textContent = 'Modalità Halloween';
             button.style.backgroundColor = '#ea914d';
 
-            // Ripristina il logo normale
+            // Ripristina il logo
             if (navLogo) {
-                navLogo.src = './images/logo-seriate-laghi-2023.png';
+                navLogo.src = '/images/logo-seriate-laghi-2023.png';
                 navLogo.alt = 'Seriate Laghi Logo';
             }
             
-            // Rimuovi ragnatele
+            // Rimuovo le ragnatele
             removeWebCorners();
         }
     }
     
-    // Aggiungi classi per ragnatele
+    // Aggiungo le classi per visualizzare le ragnatele
     function addWebCorners() {
         const nav = document.querySelector('nav');
         const footer = document.querySelector('footer');
@@ -136,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
         body.appendChild(thread3);
     }
     
-    // Rimuovi classi per ragnatele
+    // Rimuovo le classi per le ragnatele
     function removeWebCorners() {
         const nav = document.querySelector('nav');
         const footer = document.querySelector('footer');
@@ -151,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
             footer.classList.remove('web-corner-bottom-right');
         }
         
-        // Rimuovi elementi di ragnatele e ragni
+        // Rimuovo id delle ragnatele e dei ragni compreso il filo
         const elementsToRemove = [
             'hanging-web-1', 'hanging-web-2',
             'spider-1', 'spider-2', 'spider-3',
@@ -166,7 +170,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
-    // Event listener per il click
     document.addEventListener('click', (e) => {
         if (e.target.closest('.halloween-toggle')) {
             e.preventDefault();
@@ -174,6 +177,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     
-    // Aggiorna il bottone inizialmente
+    // Aggiorna il bottone e lo stile al caricamento della pagina
     updateButton();
 });

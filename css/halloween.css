@@ -112,12 +112,12 @@ footer {
     background-color: #000000;
 }
 
-/* Decorazioni Halloween https://dev.to/therickedge/spooky-halloween-css-animations-39mk */
+/* Decorazioni Halloween */
 body::before {
     content: "🕷️";
     position: fixed;
     top: 10px;
-    left: 10px;
+    left: 30%;
     font-size: 2rem;
     z-index: 999;
     animation: spider-wobble 4s ease-in-out infinite;
@@ -127,7 +127,7 @@ body::after {
     content: "🦇";
     position: fixed;
     top: 15px;
-    right: 150px;
+    right: 10%;
     font-size: 1.5rem;
     z-index: 999;
     animation: bat-fly 6s linear infinite;
@@ -136,31 +136,10 @@ body::after {
 nav::before {
     content: "🕸️";
     position: absolute;
-    top: 5px;
+    top: 2px;
     right: 20px;
     font-size: 1.2rem;
     opacity: 0.7;
-}
-
-nav::after {
-    content: "🕸️";
-    position: absolute;
-    bottom: 5px;
-    left: 20px;
-    font-size: 1rem;
-    opacity: 0.6;
-    transform: rotate(45deg);
-}
-
-footer::before {
-    content: "🦇 🕷️ 🕸️";
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1rem;
-    opacity: 0.8;
-    letter-spacing: 20px;
 }
 
 /* Pipistrelli volanti casuali */
@@ -205,22 +184,23 @@ main::after {
     66% { transform: translateY(-5px) rotate(10deg); }
 }
 
-/* Effetto spettrale sui link */
-.nav-link a:hover {
-    text-shadow: 0 0 10px #ff6f00;
-    transition: text-shadow 0.3s ease;
-}
-
+/* Ragno gigante */
 .web-corner-top-left::after {
     content: "🕷️";
     position: fixed;
-    top: 120px;
+    top: 130px;
     left: 80px;
     font-size: 3rem;
     z-index: 16;
     filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
     animation: giant-spider-move 10s ease-in-out infinite;
     transform-origin: center;
+}
+
+/* Effetto spettrale sui link */
+.nav-link a:hover {
+    text-shadow: 0 0 5px #ff6f00;
+    transition: text-shadow 0.3s ease;
 }
 
 /* Ragnatele che pendono */
@@ -297,7 +277,7 @@ main::after {
     top: -50px;
     left: 15%;
     font-size: 1.5rem;
-    z-index: 20;
+    z-index: 999;
     animation: spider-descend-1 12s linear infinite;
 }
 
@@ -306,7 +286,7 @@ main::after {
     top: -50px;
     right: 20%;
     font-size: 1.2rem;
-    z-index: 20;
+    z-index: 999;
     animation: spider-descend-2 15s linear infinite;
 }
 
@@ -315,7 +295,7 @@ main::after {
     top: -50px;
     left: 60%;
     font-size: 1.8rem;
-    z-index: 20;
+    z-index: 999;
     animation: spider-descend-3 18s linear infinite;
 }
 
@@ -331,7 +311,7 @@ main::after {
         rgba(200,200,200,0.6) 0%, 
         rgba(180,180,180,0.4) 50%, 
         transparent 100%);
-    z-index: 19;
+    z-index: 998;
     animation: thread-appear-1 12s linear infinite;
 }
 
@@ -346,7 +326,7 @@ main::after {
         rgba(190,190,190,0.5) 0%, 
         rgba(170,170,170,0.3) 50%, 
         transparent 100%);
-    z-index: 19;
+    z-index: 998;
     animation: thread-appear-2 15s linear infinite;
 }
 
@@ -361,22 +341,11 @@ main::after {
         rgba(210,210,210,0.6) 0%, 
         rgba(190,190,190,0.4) 50%, 
         transparent 100%);
-    z-index: 19;
+    z-index: 998;
     animation: thread-appear-3 18s linear infinite;
 }
 
-/* Animazioni */
-@keyframes giant-web-sway {
-    0%, 100% { 
-        transform: rotate(0deg) scale(1);
-        opacity: 0.8;
-    }
-    50% { 
-        transform: rotate(0.5deg) scale(1.01);
-        opacity: 1;
-    }
-}
-
+/* Animazione per il ragno piu grande */
 @keyframes giant-spider-move {
     0%, 100% { 
         transform: rotate(-5deg) scale(1);
@@ -396,6 +365,7 @@ main::after {
     }
 }
 
+/* Animazione per le ragnatele */
 @keyframes web-sway {
     0%, 100% { 
         transform: rotate(0deg) scale(1);
@@ -416,6 +386,7 @@ main::after {
     }
 }
 
+/* Animazioni dei ragni che scendono */
 @keyframes spider-descend-1 {
     0% { 
         top: -50px;
@@ -485,6 +456,7 @@ main::after {
     }
 }
 
+/* Animazione dei fili che sono collegati ai ragni */
 @keyframes thread-appear-1 {
     0% { 
         height: 0;
