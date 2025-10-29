@@ -51,10 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Cambia il logo per Halloween
             if (navLogo) {
-                navLogo.src = './images/logo_halloween-removebg.png';
+                navLogo.src = '../images/logo_halloween.png';
                 navLogo.alt = 'Halloween Logo';
-                navLogo.style.width = '80px';
-                navLogo.style.height = '70px';
             }
             
             // Aggiungi ragnatele negli angoli
@@ -68,8 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (navLogo) {
                 navLogo.src = './images/logo-seriate-laghi-2023.png';
                 navLogo.alt = 'Seriate Laghi Logo';
-                navLogo.style.width = 'fit-content';
-                navLogo.style.height = '60px';
             }
             
             // Rimuovi ragnatele
